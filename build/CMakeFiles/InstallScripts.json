@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/s12mc/CodeSpace/Project/BrightS/build/cmake_install.cmake",
+		"/home/s12mc/CodeSpace/Project/BrightS/build/sys/cmake_install.cmake",
+		"/home/s12mc/CodeSpace/Project/BrightS/build/sys/kernel/cmake_install.cmake",
+		"/home/s12mc/CodeSpace/Project/BrightS/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
