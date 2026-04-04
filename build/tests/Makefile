@@ -127,20 +127,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/test_btrfs_btree.dir/rule:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_btrfs_btree.dir/rule
-.PHONY : tests/CMakeFiles/test_btrfs_btree.dir/rule
-
-# Convenience name for target.
-test_btrfs_btree: tests/CMakeFiles/test_btrfs_btree.dir/rule
-.PHONY : test_btrfs_btree
-
-# fast build rule for target.
-test_btrfs_btree/fast:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/build
-.PHONY : test_btrfs_btree/fast
-
-# Convenience name for target.
 tests/CMakeFiles/test_ramfs.dir/rule:
 	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_ramfs.dir/rule
 .PHONY : tests/CMakeFiles/test_ramfs.dir/rule
@@ -153,30 +139,6 @@ test_ramfs: tests/CMakeFiles/test_ramfs.dir/rule
 test_ramfs/fast:
 	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ramfs.dir/build.make tests/CMakeFiles/test_ramfs.dir/build
 .PHONY : test_ramfs/fast
-
-__/sys/kernel/fs/btrfs_btree.o: __/sys/kernel/fs/btrfs_btree.c.o
-.PHONY : __/sys/kernel/fs/btrfs_btree.o
-
-# target to build an object file
-__/sys/kernel/fs/btrfs_btree.c.o:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/__/sys/kernel/fs/btrfs_btree.c.o
-.PHONY : __/sys/kernel/fs/btrfs_btree.c.o
-
-__/sys/kernel/fs/btrfs_btree.i: __/sys/kernel/fs/btrfs_btree.c.i
-.PHONY : __/sys/kernel/fs/btrfs_btree.i
-
-# target to preprocess a source file
-__/sys/kernel/fs/btrfs_btree.c.i:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/__/sys/kernel/fs/btrfs_btree.c.i
-.PHONY : __/sys/kernel/fs/btrfs_btree.c.i
-
-__/sys/kernel/fs/btrfs_btree.s: __/sys/kernel/fs/btrfs_btree.c.s
-.PHONY : __/sys/kernel/fs/btrfs_btree.s
-
-# target to generate assembly for a file
-__/sys/kernel/fs/btrfs_btree.c.s:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/__/sys/kernel/fs/btrfs_btree.c.s
-.PHONY : __/sys/kernel/fs/btrfs_btree.c.s
 
 __/sys/kernel/fs/ramfs.o: __/sys/kernel/fs/ramfs.c.o
 .PHONY : __/sys/kernel/fs/ramfs.o
@@ -201,30 +163,6 @@ __/sys/kernel/fs/ramfs.s: __/sys/kernel/fs/ramfs.c.s
 __/sys/kernel/fs/ramfs.c.s:
 	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ramfs.dir/build.make tests/CMakeFiles/test_ramfs.dir/__/sys/kernel/fs/ramfs.c.s
 .PHONY : __/sys/kernel/fs/ramfs.c.s
-
-test_btrfs_btree.o: test_btrfs_btree.c.o
-.PHONY : test_btrfs_btree.o
-
-# target to build an object file
-test_btrfs_btree.c.o:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/test_btrfs_btree.c.o
-.PHONY : test_btrfs_btree.c.o
-
-test_btrfs_btree.i: test_btrfs_btree.c.i
-.PHONY : test_btrfs_btree.i
-
-# target to preprocess a source file
-test_btrfs_btree.c.i:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/test_btrfs_btree.c.i
-.PHONY : test_btrfs_btree.c.i
-
-test_btrfs_btree.s: test_btrfs_btree.c.s
-.PHONY : test_btrfs_btree.s
-
-# target to generate assembly for a file
-test_btrfs_btree.c.s:
-	cd /home/s12mc/CodeSpace/Project/BrightS/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/test_btrfs_btree.c.s
-.PHONY : test_btrfs_btree.c.s
 
 test_ramfs.o: test_ramfs.c.o
 .PHONY : test_ramfs.o
@@ -259,17 +197,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... test_btrfs_btree"
 	@echo "... test_ramfs"
-	@echo "... __/sys/kernel/fs/btrfs_btree.o"
-	@echo "... __/sys/kernel/fs/btrfs_btree.i"
-	@echo "... __/sys/kernel/fs/btrfs_btree.s"
 	@echo "... __/sys/kernel/fs/ramfs.o"
 	@echo "... __/sys/kernel/fs/ramfs.i"
 	@echo "... __/sys/kernel/fs/ramfs.s"
-	@echo "... test_btrfs_btree.o"
-	@echo "... test_btrfs_btree.i"
-	@echo "... test_btrfs_btree.s"
 	@echo "... test_ramfs.o"
 	@echo "... test_ramfs.i"
 	@echo "... test_ramfs.s"

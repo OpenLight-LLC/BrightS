@@ -140,19 +140,6 @@ kernel_efi/fast:
 .PHONY : kernel_efi/fast
 
 #=============================================================================
-# Target rules for targets named test_btrfs_btree
-
-# Build rule for target.
-test_btrfs_btree: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_btrfs_btree
-.PHONY : test_btrfs_btree
-
-# fast build rule for target.
-test_btrfs_btree/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/build
-.PHONY : test_btrfs_btree/fast
-
-#=============================================================================
 # Target rules for targets named test_ramfs
 
 # Build rule for target.
@@ -175,7 +162,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... kernel_efi"
-	@echo "... test_btrfs_btree"
 	@echo "... test_ramfs"
 .PHONY : help
 

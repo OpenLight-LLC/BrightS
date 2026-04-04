@@ -124,12 +124,10 @@ sys/kernel/clean: sys/kernel/CMakeFiles/kernel_efi.dir/clean
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
-tests/all: tests/CMakeFiles/test_btrfs_btree.dir/all
 tests/all: tests/CMakeFiles/test_ramfs.dir/all
 .PHONY : tests/all
 
 # Recursive "codegen" directory target.
-tests/codegen: tests/CMakeFiles/test_btrfs_btree.dir/codegen
 tests/codegen: tests/CMakeFiles/test_ramfs.dir/codegen
 .PHONY : tests/codegen
 
@@ -138,7 +136,6 @@ tests/preinstall:
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/test_btrfs_btree.dir/clean
 tests/clean: tests/CMakeFiles/test_ramfs.dir/clean
 .PHONY : tests/clean
 
@@ -175,45 +172,13 @@ sys/kernel/CMakeFiles/kernel_efi.dir/clean:
 .PHONY : sys/kernel/CMakeFiles/kernel_efi.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/test_btrfs_btree.dir
-
-# All Build rule for target.
-tests/CMakeFiles/test_btrfs_btree.dir/all:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles --progress-num=2,3,4 "Built target test_btrfs_btree"
-.PHONY : tests/CMakeFiles/test_btrfs_btree.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/test_btrfs_btree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_btrfs_btree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_btrfs_btree.dir/rule
-
-# Convenience name for target.
-test_btrfs_btree: tests/CMakeFiles/test_btrfs_btree.dir/rule
-.PHONY : test_btrfs_btree
-
-# codegen rule for target.
-tests/CMakeFiles/test_btrfs_btree.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles --progress-num=2,3,4 "Finished codegen for target test_btrfs_btree"
-.PHONY : tests/CMakeFiles/test_btrfs_btree.dir/codegen
-
-# clean rule for target.
-tests/CMakeFiles/test_btrfs_btree.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_btrfs_btree.dir/build.make tests/CMakeFiles/test_btrfs_btree.dir/clean
-.PHONY : tests/CMakeFiles/test_btrfs_btree.dir/clean
-
-#=============================================================================
 # Target rules for target tests/CMakeFiles/test_ramfs.dir
 
 # All Build rule for target.
 tests/CMakeFiles/test_ramfs.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ramfs.dir/build.make tests/CMakeFiles/test_ramfs.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ramfs.dir/build.make tests/CMakeFiles/test_ramfs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles --progress-num=5,6,7 "Built target test_ramfs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles --progress-num=2,3,4 "Built target test_ramfs"
 .PHONY : tests/CMakeFiles/test_ramfs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -230,7 +195,7 @@ test_ramfs: tests/CMakeFiles/test_ramfs.dir/rule
 # codegen rule for target.
 tests/CMakeFiles/test_ramfs.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ramfs.dir/build.make tests/CMakeFiles/test_ramfs.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles --progress-num=5,6,7 "Finished codegen for target test_ramfs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/s12mc/CodeSpace/Project/BrightS/build/CMakeFiles --progress-num=2,3,4 "Finished codegen for target test_ramfs"
 .PHONY : tests/CMakeFiles/test_ramfs.dir/codegen
 
 # clean rule for target.

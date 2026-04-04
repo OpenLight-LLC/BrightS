@@ -54,6 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "sys/kernel/CMakeFiles/kernel_efi.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_btrfs_btree.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_ramfs.dir/DependInfo.cmake"
   )
