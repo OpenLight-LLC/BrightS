@@ -1,6 +1,7 @@
 # Contributing to BrightS
 
 Thank you for considering contributing to BrightS! We welcome contributions from the community.
+[zh_CN](docs/CONTRIBUTING_zh_CN.md)
 
 ## How to Contribute
 
