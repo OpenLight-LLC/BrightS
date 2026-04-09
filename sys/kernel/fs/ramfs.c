@@ -129,29 +129,6 @@ static int path_parent(const char *path, char *out, int cap)
   out[last] = 0;
   return 0;
 }
-
-static int path_base(const char *path, char *out, int cap)
-{
-  if (!path || !out || cap <= 0) {
-    return -1;
-  }
-  int start = 0;
-  for (int i = 0; path[i]; ++i) {
-    if (path[i] == '/') {
-      start = i + 1;
-    }
-  }
-  int p = 0;
-  for (int i = start; path[i]; ++i) {
-    if (p >= cap - 1) {
-      return -1;
-    }
-    out[p++] = path[i];
-  }
-  out[p] = 0;
-  return (p > 0) ? 0 : -1;
-}
-
 static int ramfs_find_free(void)
 {
   for (int i = 0; i < BRIGHTS_RAMFS_MAX_FILES; ++i) {
